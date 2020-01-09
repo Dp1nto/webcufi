@@ -1,0 +1,325 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Exo;
+    overflow-x: hidden;
+}
+
+header {
+    background: black;
+}
+
+section {
+    background-color: white;
+}
+
+.navbar-brand {
+    padding-top: 0px;
+}
+
+.logo {
+    width: 50px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.navigation{
+    li{
+//        @extend .medium;
+        padding: 5px 10px;
+        transition: all 0.4s;
+        text-decoration: none;
+        &:hover{
+            background-color: rgba(192,192,192,0.7);
+            text-decoration: none;
+            color: white;
+        }
+        a {
+            cursor:pointer;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative {
+	position: relative;
+}
+.top{
+   top:2em; 
+}
+.right{
+    right:3em;
+}
+
+.footer-card {
+	margin-top: 1em;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 100%;
+}
+
+.carousel-caption > h1 {
+    font-size: 80px;
+    text-shadow: 0 3px 3px black;
+}
+
+.carousel-caption > p {
+    font-size: 40px;
+    text-shadow: 0 3px 3px black;
+}
+
+.navbar,
+.navbar navbar-inverse {
+    box-shadow: 0 3px 3px #888888;
+}
+
+.glyphicon,
+.glyphicon-chevron-left,
+.glyphicon-chevron-right {
+    color: red;
+}
+
+.carousel-control {
+    width: 5%;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background-color: white;
+    color: firebrick;
+    font-size: 15px;
+}
+
+.featurette-divider {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.h2 {
+    margin: 0px;
+}
+
+.redBox {
+    background-color: brown;
+    height: 150px;
+}
+
+.aboutUs {
+    font-size: 50px;
+    text-align: right;
+}
+
+.aboutUs > p {
+    margin: 0px;
+    height: 75px;
+}
+
+.color {
+    color: brown;
+}
+
+.text > p {
+    font-size: 20px;
+    text-align: justify;
+}
+
+.text2 > p {
+    font-size: 20px;
+}
+
+.space {
+    height: 60px;
+}
+
+.moveImg {
+    text-align: center;
+}
+
+.moveImg > img {
+    width: 400px;
+    height: 250px;
+}
+
+.marginBetween {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.moveImg2 {
+    text-align: center;
+}
+
+.moveImg2 > img {
+    width: 400px;
+    height: 250px;
+}
+
+.moveText {
+    text-align: right;
+}
+
+.giants {
+    font-family: yatra one;
+    font-size: 80px;
+    text-shadow: 0 3px 3px #888888;
+    text-align: center;
+}
+
+.giantsPadding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button {
+    background: brown;
+    color: white;
+}
+
+.go-top {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    border-radius: 3em;
+    text-decoration: none;
+    color: #fff;
+    background-color: brown;
+    font-size: 12px;
+    padding: 1.5em;
+    display: none;
+}
+
+.go-top:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.visible-phone {
+    display: none;
+}
+
+.fadeDesktop {
+    display: none;
+}
+
+
+/** Mobile **/
+
+@media (max-width: 767px) {
+    .hideSlider,
+    .space,
+    .hidden-phone {
+        display: none;
+    }
+    h2 {
+        margin: 10px;
+    }
+    .redBox {
+        background-color: brown;
+        height: 80px;
+    }
+    .aboutUs {
+        font-size: 30px;
+        text-align: left;
+        padding-left: 0px;
+    }
+    .aboutUs > p {
+        height: 50px;
+    }
+    .moveImg {
+        text-align: center;
+    }
+    .moveImg .moveImg2 > img {
+        width: 320px;
+        height: 200px;
+    }
+    .marginBetween {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .paddingText {
+        padding: 10px;
+    }
+    .text > p {
+        font-size: 15px;
+    }
+    .text2 > p {
+        font-size: 15px;
+    }
+    .moveText {
+        text-align: left;
+    }
+    .moveParticular {
+        text-align: right;
+    }
+    .featurette-divider {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .visible-phone {
+        display: block;
+    }
+    .paddingLeft {
+        padding-left: 15px;
+    }
+    .removePadingLeft {
+        padding-left: 0px;
+    }
+    .giants {
+        font-size: 50px;
+    }
+    .fadeIpad {
+        display: none;
+    }
+    .fadeDesktop {
+        display: block;
+    }
+}
+
+@media (min-width:768px) and (max-width: 992px) {
+    .carousel-caption > h1 {
+        font-size: 50px;
+        text-shadow: 0 3px 3px black;
+    }
+    .carousel-caption > p {
+        font-size: 30px;
+        text-shadow: 0 3px 3px black;
+    }
+    .aboutUs {
+        text-align: left;
+    }
+    .moveLeft {
+        padding: 0px;
+    }
+    .marginBetween {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .moveParticular {
+        text-align: left;
+    }
+    .moveText {
+        text-align: right;
+    }
+    .giants {
+        text-align: right;
+        font-size: 55px;
+    }
+    .fadeIpad {
+        display: none;
+    }
+    .fadeDesktop {
+        display: block;
+    }
+    .paddingText {
+        padding: 10px;
+    }
+}
