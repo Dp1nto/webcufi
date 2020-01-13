@@ -14,12 +14,10 @@
     <link rel="stylesheet" href="index.css">
     <meta autor="Yudith de Freitas" content="">
     <link rel="icon" href="imagenes/favicon.ico">
-	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <title>Catering Cufi</title>
 </head>
 
 <body>
-    
     <header>
         <div id="carousel-example-generic" class="hideSlider carousel slide" data-ride="carousel">
         <!-- Indicators -->
@@ -450,6 +448,16 @@
         
         <!--FORMULARIO-->
         
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback" async defer></script>
+        <script>
+            var onloadCallback = function() {
+                grecaptcha.execute();
+            };
+            
+            function setResponse(response) { 
+                document.getElementById('captcha-response').value = response; 
+            }
+            </script>
         <form class="container" id="form1" action="enviar.php" method="post" name="form1">
             <div class="row">
                 <div class="col-md-6 col-xs-12">
@@ -490,9 +498,9 @@
                 </div>
                 <div class="form-group">
                     <div class="col-sm-12 col-md-12 col-xs-12">
+                            <div class="g-recaptcha" data-sitekey="Enter Key" data-badge="inline" data-size="invisible" data-callback="setResponse">div>
+                            <input type="hidden" id="captcha-response" name="captcha-response" />
                         <label for="enviar"></label>
-						<div class="g-recaptcha" data-sitekey="6Lcm480UAAAAAILsf2-OupPOqSfonX2IvZshOaM4"></div>
-						<br/>
                         <input id="submit" name="submit" type="submit" class="col-xs-12 col-sm-12 col-md-12 button btn btn-default">
                     </div>
                 </div>
